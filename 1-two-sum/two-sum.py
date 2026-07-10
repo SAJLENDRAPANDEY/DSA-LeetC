@@ -1,0 +1,34 @@
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        # lef=0
+        # for right in nums:
+        #     if nums[lef]+nums[right]==target:
+        #         return [lef,right]
+        #     lef+=1
+
+        # for i in range(len(nums)):
+        #     for j in range(len(nums)-1,-1):
+        #         if nums[i]+nums[j]==target:
+        #             return ([i,j])
+        
+        # left=0
+        # right=len(nums)-1
+        # while left<=right:
+        #     s=nums[left]+nums[right]
+        #     if s==target:
+        #         return(left,right)
+        #     elif s<target:
+        #         left=s+1
+        #     else:
+        #         right=s-1
+
+        for i  in range(len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i]+nums[j]==target:
+                    return (i,j)
+        
