@@ -6,29 +6,36 @@ class Solution(object):
         :rtype: List[int]
         """
         # lef=0
-        # for right in nums:
+        # for right in range(lef+1,len(nums)):
         #     if nums[lef]+nums[right]==target:
-        #         return [lef,right]
+        #         return (lef,right)
         #     lef+=1
 
         # for i in range(len(nums)):
         #     for j in range(len(nums)-1,-1):
         #         if nums[i]+nums[j]==target:
         #             return ([i,j])
-        
+        # nums.sort()
         # left=0
         # right=len(nums)-1
-        # while left<=right:
+        # while left<right:
         #     s=nums[left]+nums[right]
         #     if s==target:
         #         return(left,right)
         #     elif s<target:
-        #         left=s+1
+        #         left+=1
         #     else:
-        #         right=s-1
+        #         right-=1
 
-        for i  in range(len(nums)):
-            for j in range(i+1,len(nums)):
-                if nums[i]+nums[j]==target:
-                    return (i,j)
+        # for i  in range(len(nums)):)
+        #     for j in range(i+1,len(nums)):
+        #         if nums[i]+nums[j]==target:
+        #             return (i,j)
         
+
+        freq={}
+        for index,num in enumerate(nums):
+            req=target-num
+            if req in freq:
+                return (freq[req],index)
+            freq[num]=index
