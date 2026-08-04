@@ -56,13 +56,23 @@ class Solution(object):
 
 
 
-        for i in range(len(nums)):
-            for j in range(i+1,len(nums)):
-                if nums[i]+nums[j]==target:
-                    return [i,j]
+        # for i in range(len(nums)):
+        #     for j in range(i+1,len(nums)):
+        #         if nums[i]+nums[j]==target:
+        #             return [i,j]
                 
-                i+=1
-                j+=1
+        #         i+=1
+        #         j+=1
+
+
+
+        freq={}
+        for index,num in enumerate(nums):
+            if target-num in freq:
+                return (freq[target-num],index)
+            freq[num]=index
+
+
 
 
 
