@@ -33,12 +33,12 @@ class Solution(object):
         #             return (i,j)
         
 
-        # freq={}
-        # for index,num in enumerate(nums):
-        #     req=target-num
-        #     if req in freq:
-        #         return (freq[req],index)
-        #     freq[num]=index
+        freq={}
+        for index,num in enumerate(nums):
+            req=target-num
+            if req in freq:
+                return (freq[req],index)
+            freq[num]=index
 
 
 
