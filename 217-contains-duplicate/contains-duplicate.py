@@ -20,7 +20,12 @@ class Solution(object):
         # return False
         
 
-
+        seen={}
+        for num in nums:
+            if num in seen:
+                return True
+            seen[num]=num
+        return False
 
 
 
