@@ -5,6 +5,12 @@ class Solution(object):
         :rtype: bool
         """
        
+
+
+
+
+
+
         x="({["
         stack=[]
         for ch in s:
@@ -14,20 +20,12 @@ class Solution(object):
                 if not stack:
                     return False
                 top=stack[-1]
-                
-                if ((ch==')' and top!='(') or 
-                    (ch=='}' and top !='{') or 
-                    (ch==']' and top !='[')):
+                if ((ch==')' and top!='(') or
+                    (ch=='}' and top!='{') or
+                    (ch==']' and top!='[')):
                     return False
                 stack.pop()
         return len(stack)==0
-
-
-
-
-
-
-
 
 
         
