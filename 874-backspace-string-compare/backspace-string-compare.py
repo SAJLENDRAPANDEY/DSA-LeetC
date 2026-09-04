@@ -19,4 +19,5 @@ class Solution(object):
                     stack2.pop()
             else:
                 stack2.append(ch)
+                
         return stack1==stack2
