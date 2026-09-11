@@ -21,6 +21,14 @@ class Solution(object):
 
 
 
+        freq={}
+        for num  in  nums:
+            freq[num]=freq.get(num,0)+1
+        n=len(nums)
+        for num in freq:
+            if freq[num]>n/2:
+                return num
+        return -1
 
 
 
