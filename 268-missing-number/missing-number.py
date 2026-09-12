@@ -5,7 +5,23 @@ class Solution(object):
         :rtype: int
         """
         n=len(nums)
-        expected=n*(n+1)//2
+        actual=n*(n+1)//2
         total=sum(nums)
-        return expected-total
-            
+        return actual-total
+
+
+
+
+
+
+
+
+
+
+
+
+
+        n=len(nums)
+        actual=(n*(n+1))//2
+        total_sum=sum(nums)
+        return actual-total_sum
