@@ -4,11 +4,24 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n=len(nums)
-        actual=n*(n+1)//2
-        total=sum(nums)
-        return actual-total
+        # n=len(nums)
+        # actual=n*(n+1)//2
+        # total=sum(nums)
+        # return actual-total
 
+
+
+
+
+
+
+
+
+
+        n=len(nums)
+        actual_sum=(n*(n+1))/2
+        total_sum=sum(nums)
+        return actual_sum-total_sum
 
 
 
