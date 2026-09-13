@@ -4,11 +4,31 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        # res=[]
+        # seen=set(nums)
+        # n=len(nums)
+        # for i in range(1,len(nums)+1):
+        #     if i not in seen:
+        #         res.append(i)
+        # return res
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         res=[]
-        seen=set(nums)
-        n=len(nums)
+        seet=set(nums)
         for i in range(1,len(nums)+1):
-            if i not in seen:
+            if i not in seet:
                 res.append(i)
         return res
 
