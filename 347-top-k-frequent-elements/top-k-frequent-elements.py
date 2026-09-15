@@ -14,6 +14,18 @@ class Solution(object):
         #     res.append(sorted_fre[x][0])
         # return res
 
+        freq={}
+        for num in nums:
+            freq[num]=freq.get(num,0)+1
+        
+        sorted_freq=sorted(freq.items(),key=lambda x:x[1],reverse=True)
+        res=[]
+        for c in range(k):
+            res.append(sorted_freq[c][0])
+        return res
+
+        
+
 
 
 
