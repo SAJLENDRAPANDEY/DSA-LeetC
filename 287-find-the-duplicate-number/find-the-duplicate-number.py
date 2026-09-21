@@ -4,10 +4,21 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        # freq={}
+        # for num in nums:
+        #     freq[num]=freq.get(num,0)+1
+        # for num in freq:
+        #     if freq[num]>=2:
+        #         return num
+
+
+
+
+
         freq={}
         for num in nums:
             freq[num]=freq.get(num,0)+1
-        for num in freq:
-            if freq[num]>=2:
-                return num
+        for ch in freq:
+            if freq[ch]>=2:
+                return ch
         
