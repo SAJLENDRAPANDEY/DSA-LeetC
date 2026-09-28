@@ -18,7 +18,7 @@ class Solution(object):
         freq={}
         for num in nums:
             freq[num]=freq.get(num,0)+1
-        for ch in freq:
-            if freq[ch]>=2:
-                return ch
+        for num in freq:
+            if freq[num]>=2:
+                return num
         
