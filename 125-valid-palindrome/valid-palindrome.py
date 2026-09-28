@@ -4,6 +4,30 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        # left=0
+        # right=len(s)-1
+        # if len(s)==0:
+        #     return True
+        # while left<right:
+        #     if not s[left].isalnum():
+        #         left+=1
+        #         continue
+                
+        #     elif not s[right].isalnum():
+        #         right-=1
+        #         continue
+                
+        #     elif s[left].lower()!=s[right].lower():
+        #         return False
+        #     left+=1
+        #     right-=1
+        # return True
+
+
+
+
+
+
         left=0
         right=len(s)-1
         if len(s)==0:
@@ -12,16 +36,15 @@ class Solution(object):
             if not s[left].isalnum():
                 left+=1
                 continue
-                
-            elif not s[right].isalnum():
+            if not s[right].isalnum():
                 right-=1
                 continue
-                
             elif s[left].lower()!=s[right].lower():
                 return False
             left+=1
             right-=1
         return True
+
 
                 
         
