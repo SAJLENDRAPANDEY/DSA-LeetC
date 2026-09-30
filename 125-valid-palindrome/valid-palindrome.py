@@ -24,10 +24,6 @@ class Solution(object):
         # return True
 
 
-
-
-
-
         left=0
         right=len(s)-1
         if len(s)==0:
@@ -45,6 +41,9 @@ class Solution(object):
             right-=1
         return True
 
+        
 
-                
+
+
+
         
