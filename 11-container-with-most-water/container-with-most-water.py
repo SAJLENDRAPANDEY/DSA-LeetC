@@ -25,21 +25,20 @@ class Solution(object):
 
 
 
+
         left=0
         right=len(height)-1
-        max_area=0
+        max_height=0
         while left<right:
             width=right-left
             curr_height=min(height[left],height[right])
-
-            area=curr_height*width
-            max_area=max(max_area,area)
-
+            area=width*curr_height
+            max_height=max(max_height,area)
             if height[left]<height[right]:
                 left+=1
             else:
                 right-=1
-        return max_area
+        return max_height
 
 
 
@@ -47,5 +46,6 @@ class Solution(object):
 
 
 
-            
-            
+
+
+        
