@@ -11,6 +11,13 @@ class Solution(object):
         
         # nums.sort()
         # return nums
+        i=0
+        for i in range(len(nums)):
+            nums[i]=nums[i]*nums[i]
+        i+=1
+        nums.sort()
+        return nums
+
         
 
 
@@ -35,9 +42,4 @@ class Solution(object):
 
 
 
-        i=0
-        for i in range(len(nums)):
-            nums[i]=nums[i]*nums[i]
-        i+=1
-        nums.sort()
-        return nums
+       
