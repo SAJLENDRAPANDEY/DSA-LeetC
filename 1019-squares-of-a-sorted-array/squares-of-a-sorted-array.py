@@ -11,6 +11,8 @@ class Solution(object):
         
         # nums.sort()
         # return nums
+        
+
         i=0
         for i in range(len(nums)):
             nums[i]=nums[i]*nums[i]
